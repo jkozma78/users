@@ -1,4 +1,7 @@
 // konstans változók értékadása
+
+//start json server:json-server --watch .\js\db.json
+
 let url = "http://localhost:3000/adatok";
 keys = ["id", "text", "neve"];
 
