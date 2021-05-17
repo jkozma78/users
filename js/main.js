@@ -34,15 +34,14 @@ function putServerData(url){
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(appendData),
-
     };
+
     return fetch(url, fetchOptions).then(
       data => data.json(),
       err => console.error(err)
     ).then(
       data => getServerData(url).then(data => userTable(data))
     );
-
   }
     else{
     alert("Beviteli mező nem lehet üres!")
