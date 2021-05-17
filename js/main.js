@@ -1,12 +1,11 @@
-// konstans változók értékadása
-
 //start json server:json-server --watch .\js\db.json
 
+// konstans változók értékadása
 let url = "http://localhost:3000/adatok";
 keys = ["id", "text", "neve"];
 
 
-function putServerData(url) {
+function putServerData(url){
   /* fetch('http://localhost:3000/adatok', {
       method: 'PosT', // or 'PUT'
       headers: {
@@ -21,13 +20,14 @@ function putServerData(url) {
    .catch((error) => {
      console.error('Error:', error);
    }); */
-  if (document.querySelector("#id").value="" || document.querySelector("#dat").value ){
+  
+  if ((document.querySelector("#id").value!="") || (document.querySelector("#dat").value!="" )){
 
 
-    appendData = { "text": document.querySelector("#id").value, "neve": document.querySelector("#dat").value }
+    appendData = {"text": document.querySelector("#id").value, "neve": document.querySelector("#dat").value }
     document.querySelector("#id").value = "";
     document.querySelector("#dat").value = "";
-
+  
     let fetchOptions = {
       method: "POST",
       headers: {
@@ -44,7 +44,7 @@ function putServerData(url) {
     );
 
   }
-  else {
+    else{
     alert("Beviteli mező nem lehet üres!")
   }
 };
