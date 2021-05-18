@@ -73,7 +73,8 @@ document.querySelector("#getData").addEventListener("click", function () {
     data => userTable(data))
 });
 
-document.querySelector(".btn.btn-success").addEventListener("click", function () { olvas() });
+//document.querySelector(".btn.btn-success").addEventListener("click", function () { olvas() });
+document.querySelector("#add").addEventListener("click", function () { olvas() });
 
 function userTable(data) {
 
