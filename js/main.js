@@ -21,7 +21,7 @@ function putServerData(url){
      console.error('Error:', error);
    }); */
   
-  if ((document.querySelector("#id").value!="") || (document.querySelector("#dat").value!="" )){
+  if (document.querySelector("#id").value && document.querySelector("#dat").value) {
 
 
     appendData = {"text": document.querySelector("#id").value, "neve": document.querySelector("#dat").value }
