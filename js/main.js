@@ -1,4 +1,6 @@
 //start json server:json-server --watch .\js\db.json
+//csoprtházirend->felhasználó konfigurációja->felügyeleti sablonok->
+//windows összetevők->windows powershell->Turn on script execution->engedélyezés
 
 // konstans változók értékadása
 let url = "http://localhost:3000/adatok";
