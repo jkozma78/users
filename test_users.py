@@ -1,15 +1,3 @@
-# import time
-#
-# import pytest
-# from selenium import webdriver
-#
-#
-# def test_one():
-#     driver = webdriver.Chrome()
-#     driver.get('http://localhost:8080/')
-#     driver.find_element_by_id("getData").click()
-#     time.sleep(2)
-#     assert driver.find_element_by_xpath('//td[text()=1]')
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
