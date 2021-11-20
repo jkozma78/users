@@ -1,6 +1,6 @@
 # users
-### This is an HTML and JavaScript code using JSON Server to access to database, where stored a first name and lastname date.
-You can list, add and remove user from database. Modify is sill missing...
+### This is a HTML and JavaScript code using JSON Server to access database, where stored the first name and lastname data.
+You can list, add and remove user from database. Modify is still missing...
 
 # How to Run
 
