@@ -46,7 +46,7 @@ function putServerData(url){
     );
   }
     else{
-    alert("Beviteli mező nem lehet üres!")
+    alert("Input field cannot be empty!")
   }
 };
 
