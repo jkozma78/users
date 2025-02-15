@@ -1,5 +1,5 @@
 //start json server:json-server --watch .\js\db.json
-//csoprtházirend->felhasználó konfigurációja->felügyeleti sablonok->
+//csoprtházirend szerkesztése->felhasználó konfigurációja->felügyeleti sablonok->
 //windows összetevők->windows powershell->Turn on script execution->engedélyezés
 
 // konstans változók értékadása
@@ -91,20 +91,21 @@ function userTable(data) {
 
     }
     table.appendChild(tr);
-
     bt = document.createElement("button");
     bt.setAttribute("class", "btn btn-danger");
     bt.setAttribute("id", "gmb");
-    tr.appendChild(bt);
     bt.innerHTML = '<i class="fas fa-user-minus"></i>'
-
+    tr.appendChild(bt);
+    
+      
   }
+  
   btn = document.querySelectorAll("#gmb");
   for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("click", function () { katt(this.parentElement.firstChild.innerHTML) });
 
   }
-
+  
 };
 
 function katt(i) {
